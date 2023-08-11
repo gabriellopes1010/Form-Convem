@@ -11,7 +11,7 @@ export class FormComponent {
   message: string = ''
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
 
     ){}
     isSuccessMessage: boolean = false;
@@ -35,6 +35,10 @@ export class FormComponent {
           this.message = "Erro"
         }
       );
+    }
+
+    cancel(){
+      window.location.reload()
     }
   }
 

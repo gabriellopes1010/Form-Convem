@@ -12,7 +12,7 @@
       placeholder="digite a sua resposta">
       <div class="acoes">
         <button (click)="submit()" class="botao ff-roboto-mono">Enviar!</button>
-        <button class="botao ff-roboto-mono">Cancelar!</button>
+        <button (click)="cancel()" class="botao ff-roboto-mono">Cancelar!</button>
       </div>
       <p [class.success]="isSuccessMessage" [class.reject] ="isRejectMessage" >{{ message }}</p>
   </form>

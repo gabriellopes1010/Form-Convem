@@ -19,5 +19,5 @@ app.post('/check',(req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`🔥Servidor está rodando na porta localhost:${port}`)
+  console.log(`Servidor está rodando na porta  🔥🔥🔥http://localhost:${port}`)
 })
