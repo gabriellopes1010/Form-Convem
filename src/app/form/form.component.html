@@ -1,0 +1,19 @@
+<section class="container criar-form ff-roboto-mono">
+  <header class="header">
+    <h2>Admissão CONVEM:</h2>
+  </header>
+  <form class="criar-form">
+    <label for="admissao">Você quer se juntar ao time da Convem?</label>
+    <input
+      type="textarea" class="input"
+      id="form"
+      [(ngModel)]="responseUser"
+      name="form"
+      placeholder="digite a sua resposta">
+      <div class="acoes">
+        <button (click)="submit()" class="botao ff-roboto-mono">Enviar!</button>
+        <button class="botao ff-roboto-mono">Cancelar!</button>
+      </div>
+      <p [class.success]="isSuccessMessage" [class.reject] ="isRejectMessage" >{{ message }}</p>
+  </form>
+</section>
