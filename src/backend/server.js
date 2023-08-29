@@ -14,7 +14,8 @@ app.post('/check',(req, res) => {
   if(responseUser === 'sim'){
     res.json({ result: 'sucess' })
   } else {
-    res.json({ result: 'error' })
+    res.status(403).json({ result: 'error' })
+
   }
 })
 
