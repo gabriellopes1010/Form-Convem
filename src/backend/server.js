@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 app.post('/check',(req, res) => {
   const responseUser = req.body.response.toLowerCase();
   if(responseUser === 'sim'){
-    res.json({ result: 'sucess' })
+    res.json({ result: 'success' })
   } else {
     res.status(403).json({ result: 'error' })
 
